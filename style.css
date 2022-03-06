@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: none;
+    padding: 0 70px ;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+    /* background: #1F2833; */
+    /* background: black; */
+    font-family: sans-serif;
+    transition: all 0.5s ease;
+}
+
+/* Navbar styling */
+
+.navbar.sticky{
+    padding: 15px 0;
+    background: black;
+}
+.navbar .logo a:hover{
+    color: #66FCF1;
+    background: black;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #64fcf2;
+}
+
+/* menu button */
+
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    background: #1F2833;
+    /* background: #66FCF1 no-repeat center; */
+    height: 100ch;
+    font-family: sans-serif;
+    font-size:20px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content{
+    margin-right: 120px;
+}
+
+.home .home-content .text-1{
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.534);
+    
+
+}
+
+.home .home-content .text-2{
+    font-size: 45px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    color: #29cec3;
+
+}
+
+.home .home-content .text-3{
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+.home .image{
+    margin-top: 10%;
+    height: 35% ;
+    width: 35% ;
+    object-fit: contain;
+    
+}
+/* all similar content styling code */
+section{
+    padding: 100px 0;
+}
+.about, .services, .skills{
+    font-family: 'Roboto', sans-serif;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+section .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    color: #42b7af;
+    background: white;
+    transform: translateX(-50%);
+}
+
+/* About section styling */
+
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content,
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #42b7af;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #42b7af;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 25px;
+    margin-top: 18px;
+    border-radius: 6px;
+    border:2px solid #42b7af;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color:#42b7af ;
+    background: none;
+}
+
+/* services styling  */
+
+.services{
+    background:#1F2833;
+}
+.services .title::after{
+    background: #1F2833 ;
+    content: "what i deliver";
+}
+
+.services .serv-content .card{
+    width: calc(50% - 30px);
+    background: gray;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.services .serv-content .card i{
+    font-size: 50px;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease-in;
+    
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card:hover{
+    background: #42b7af;
+    transition: 0.3s ease-in-out;
+}
+
+/* skills section styling */
+
+.skills .title::after{
+    content: "what I know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 20px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .left .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .left .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .left .line{
+    height: 5px;
+    width: 100%;
+    background:lightgrey ;
+    position: relative;
+}
+
+.skills .skills-content .left .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #42b7af;
+
+}
+.skills .skills-content .left .html::before{
+    width: 90%;
+}
+.skills .skills-content .left .CSS::before{
+    width: 80%;
+}
+.skills .skills-content .left .Bootstrap::before{
+    width: 70%;
+}
+.skills .skills-content .left .JavaScript::before{
+    width: 70%;
+}
+.skills .skills-content .left .React::before{
+    width: 50%;
+}
+.skills .skills-content .left .Java::before{
+    width: 50%;
+}
+
+.skills .skills-content a{
+    display: inline-block;
+    background: #42b7af;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 25px;
+    margin-top: 18px;
+    /* margin-bottom: 25%; */
+    border-radius: 6px;
+    border:2px solid #42b7af;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content a:hover{
+    color:#42b7af ;
+    background: none;
+}
+
+.skills .skills-content .left{
+    margin: auto;
+    margin-bottom: 25px;
+    
+}
+/* responsive media query start */
+@media (max-width: 1300px){
+
+    .home .max-width{
+        margin-left: 0px;
+
+    }
+}
+@media (max-width: 1104px){
+
+    .about .about-content .left img{
+            height: 350px;
+            width: 350px;
+        }
+    }
+    
+@media (max-width: 947px){
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.6s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-3{
+        font-size: 70px;
+    }
+    
+    .home .image{
+        font-size: 35px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+    }
+
+}
+
+    
+
+
+
+@media (max-width:629px) {
+    .home .image {
+      display: none;
+    }
+  }
