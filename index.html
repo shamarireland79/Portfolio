@@ -20,14 +20,13 @@
 
        <nav class = "navbar">
            <div class ="max-width">
-               <div class = "logo"><a href= "#">Portf<span>olio</span></a></div>
+               <div class = "logo"><a href= "index.html">Portf<span>olio</span></a></div>
                 <ul class= "menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu-btn">
                     <i class="fas fa-bars"></i>
@@ -66,7 +65,9 @@
                     </div>
                         <div class="column right">
                         <div class="text">I'm Shamar and I'm a <span>CS Student</span></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil asperiores obcaecati tempora, praesentium ad, inventore molestias doloremque labore ex quis ipsa itaque cumque quaerat! Fuga hic, culpa obcaecati adipisci at, vel eveniet nisi ipsam optio porro veritatis eius, tempora nesciunt. Iure soluta possimus modi, sit impedit quas doloribus debitis vel sequi dolorum. Vel nulla nesciunt eos fugiat quibusdam quia!</p>
+                        <p>Hello there, My Name is Shamar Ireland and I am a Computer Science Major at San Francisco State University. I am a senior and I will be graduating Fall 2022.
+                            I am a dedicated student willing always willing to learn and push through to get the best possible outcome I can attain.
+                        </p>
                         <a href="">Download Resume</a>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
                         <div class="box">
                             <i class="fas fa-paint-brush"></i>
                             <div class="text">Front End</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae laudantium, soluta optio molestiae autem.</p>
+                            <p>Have a passion for Front End development. Always willing to research more tools that can help me advance.</p>
                         </div>
                     </div>
 
@@ -93,7 +94,7 @@
                         <div class="box">
                             <i class="fas fa-paint-brush"></i>
                             <div class="text">Backend</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum beatae laudantium, soluta optio molestiae autem.</p>
+                            <p>Able to do backend as well since my school mostly uses backend languages to make us well rounded CS students.</p>
                         </div>
                     </div>
 
@@ -116,6 +117,7 @@
                 <div class="skills-content">
                     <div class="column left">
                         <div class="text">My Skills and Experiences</div>
+                        <br>
                         <div class="bars">
                             <div class="info">
                                 <span>HTML</span>
@@ -158,17 +160,90 @@
                             </div>
                             <div class="line Java"></div>
                         </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Git/ GitHub</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line Git"></div>
+                        </div>
                     </div>
-                    <a href="#">Read More</a>
+                    <a href="https://www.linkedin.com/in/shamar-ireland/">Read More</a>
                 </div>
             </div>
 
         </section>
 
-        <p>Separating paragraphs with blank lines is easiest for readers to scan, but they can also be separated by indenting their first lines. This is often used to take up less space, such as to save paper in print.
-            Writing that is intended to be edited, such as school papers and rough drafts, uses both blank lines and indentation for separation. In finished works, combining both is considered redundant and amateurish.
-            In very old writing, paragraphs were separated with a special character: ¶, the pilcrow. Nowadays, this is considered claustrophobic and hard to read.
-            How hard to read? See for yourself:</p>
+        <!-- Contact Section  -->
+
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-content">
+                <div class="column-left">
+                    <div class ="text">Get in Touch</div>
+                    <p>Below is my info for you to contact me and where I'm located</p>
+                    <br>
+                    <br>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Shamar Ireland</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">San Francisco, CA</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <i class="fa-solid fa-inbox"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">shamarireland79@hotmail.com</div>
+                            </div>
+                            <br>
+                            <br>
+                        </div>
+                    </div> 
+                </div>
+                <br>
+                <br>
+                <div class="column right">
+                <div class="text">Message Me</div>
+                   <form action="#">
+                       <div class="field">
+                           <div class="field name">
+                               <input type="text" placeholder="Name" required>
+                           </div>
+                           <br>
+                           <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                            </div>
+                            <br>
+                            <div class="field email">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <br>
+                            <div class="text">
+                                <textarea cols="30" rows="10" placeholder="Describe"></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send Message</button>
+                            </div>
+                       </div>
+                   </form>
+                </div>
+            </div>
+        
+            </div>
+        </section>
             <script src="script.js"></script>
     </body>
 </html>

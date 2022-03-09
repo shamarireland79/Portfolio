@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
     max-width: none;
     padding: 0 70px ;
@@ -321,6 +325,9 @@ section .title::after{
 .skills .skills-content .left .Java::before{
     width: 50%;
 }
+.skills .skills-content .left .Git::before{
+    width: 70%;
+}
 
 .skills .skills-content a{
     display: inline-block;
@@ -346,6 +353,87 @@ section .title::after{
     margin-bottom: 25px;
     
 }
+
+/* Contact Styling  */
+.contact{
+    font-family: 'Poppins', sans-serif;
+    background: #1F2833;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(162, 161, 161);
+    /* justify-content: space-between; */
+}
+
+.contact .title::after{
+    background: #1F2833;
+    content: "get in touch";
+}
+
+.contact .contact-content .column-left{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.contact .right form .field{
+    font-size: 17px;
+    border-color: black;
+    
+    
+}
+
+/* .contact .right form .fields,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+} */
+
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border-color: #42b7af;
+    background: rgb(201, 197, 197);
+    font-size: 17px;
+    
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #42b7af;
+    background: #42b7af;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 6px;
+}
+
+.contact .right form .button button:hover{
+    color: #42b7af;
+    background: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contact .right form .text textarea{
+    border-color: #42b7af;
+    border: 3px solid #42b7af;
+    background: rgb(201, 197, 197);
+    font-size: 18px;
+    font-family:'Roboto', sans-serif ;
+}
+
+
 /* responsive media query start */
 @media (max-width: 1300px){
 
