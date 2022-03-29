@@ -611,6 +611,11 @@ section .title::after{
     margin-top: 15px;
 }
 
+.projects .projects-content .award{
+    color: #42b7af;
+    font-weight: 700;
+}
+
 @media (max-width:629px) {
     .home .image {
       display: none;
