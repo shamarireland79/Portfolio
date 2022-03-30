@@ -616,6 +616,11 @@ section .title::after{
     font-weight: 700;
 }
 
+.projects .projects-content .project-description{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
 @media (max-width:629px) {
     .home .image {
       display: none;
@@ -623,6 +628,9 @@ section .title::after{
 
     .projects .projects-content .storefront{
         display: none;
+    }
+    .projects .projects-content .project-description{
+        margin: auto;
     }
   }
 
